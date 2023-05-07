@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nextjs:
+      build: .
+      command: pnpm start
+      volumes:
+        - .:/nextjs-blog
+      working_dir: /nextjs-blog
+      ports:
+        - 3000:3000
